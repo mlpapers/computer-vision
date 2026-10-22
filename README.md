@@ -10,7 +10,7 @@ tags:
 
 ## Descriptors and correspondence
 
-- **SIFT** - Extracts local descriptors invariant to scale and rotation for matching objects or scenes across images; robustness to viewpoint and illumination changes is empirical, not unlimited invariance. [Lowe 2004](<https://link.springer.com/article/10.1023/B:VISI.0000029664.99615.94> "Distinctive Image Features from Scale-Invariant Keypoints; IJCV").
+- **SIFT** - Extracts local descriptors invariant to scale and rotation for matching objects or scenes across images; robustness to viewpoint and illumination changes is empirical, not unlimited invariance. [Lowe 2004](<https://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf> "Distinctive Image Features from Scale-Invariant Keypoints; IJCV").
 - **Histograms of oriented gradients** - Pools local gradient orientations with overlapping block normalization. The human-detection study isolates how spatial binning, orientation resolution, and contrast normalization affect recognition. [Dalal and Triggs 2005](<https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf> "Histograms of Oriented Gradients for Human Detection; CVPR").
 - **SuperPoint** - Jointly predicts interest points and descriptors from full images; Homographic Adaptation supplies self-supervision for repeatable matching across transformed views. [DeTone et al. 2018](<https://arxiv.org/abs/1712.07629> "SuperPoint: Self-Supervised Interest Point Detection and Description; CVPR DL4VSLAM Workshop").
 - **SuperGlue** - Uses attention and a graph neural network to predict matching costs, then differentiable optimal transport to assign local features and reject unmatched points. [Sarlin et al. 2020](<https://arxiv.org/abs/1911.11763> "SuperGlue: Learning Feature Matching with Graph Neural Networks; CVPR").
