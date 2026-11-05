@@ -19,6 +19,7 @@ tags:
 
 ## Classification backbones
 
+- **Cresceptron** - Grows a hierarchy of neurons and connections as new concepts appear. Uses hierarchical tolerance for recognition and traces response paths for segmentation. [Weng et al. 1992](<https://experts.illinois.edu/en/publications/cresceptron-a-self-organizing-neural-network-which-grows-adaptive/> "Cresceptron: A Self-Organizing Neural Network Which Grows Adaptively; IJCNN").
 - **AlexNet** - Trains a deep convolutional classifier on ImageNet using GPU computation, non-saturating neurons, and regularization; a reference for large-scale supervised visual learning. [Krizhevsky et al. 2012](<https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks> "ImageNet Classification with Deep Convolutional Neural Networks; NeurIPS").
 - **VGG** - Studies depth using stacks of small 3×3 convolution filters; provides classification networks whose learned representations transfer to other image datasets. [Simonyan and Zisserman 2015](<https://arxiv.org/abs/1409.1556> "Very Deep Convolutional Networks for Large-Scale Image Recognition; ICLR").
 - **ResNet** - Learns residual functions relative to layer inputs, easing optimization of deep networks. The paper evaluates recognition and transfers the backbone to detection. [He et al. 2016](<https://arxiv.org/abs/1512.03385> "Deep Residual Learning for Image Recognition; CVPR").
@@ -31,12 +32,7 @@ tags:
 
 ## Learning reusable visual features
 
-- **SimCLR** - Learns representations through contrastive prediction between augmented image views. The study isolates augmentation composition, a nonlinear projection head, and batch size as consequential choices. [Chen et al. 2020](<https://arxiv.org/abs/2002.05709> "A Simple Framework for Contrastive Learning of Visual Representations; ICML").
-- **BYOL** - Trains an online network to predict a moving-average target network's representation of another augmented view, without explicit negative pairs. [Grill et al. 2020](<https://arxiv.org/abs/2006.07733> "Bootstrap your own latent: A new approach to self-supervised Learning; NeurIPS").
-- **DINO** - Uses self-distillation without labels, a momentum encoder, and multiple crops. Studies semantic structure in Transformer features and evaluates them with nearest-neighbor and linear classifiers. [Caron et al. 2021](<https://arxiv.org/abs/2104.14294> "Emerging Properties in Self-Supervised Vision Transformers; ICCV").
-    - **DINOv2** - Combines curated image data, scaled self-supervised training, and model distillation to produce reusable features evaluated at image and pixel levels. [Oquab et al. 2024](<https://arxiv.org/abs/2304.07193> "DINOv2: Learning Robust Visual Features without Supervision; TMLR").
-    - **DINOv3** - Introduces Gram anchoring to address deterioration of dense features during long self-supervised training; studies scaling and post-training adaptation of visual representations. [Siméoni et al. 2026](<https://arxiv.org/abs/2508.10104> "DINOv3; NeurIPS").
-- **Masked autoencoders** - Encodes only visible image patches and uses a lightweight decoder to reconstruct missing pixels; separates representation learning from the full reconstruction network. [He et al. 2022](<https://arxiv.org/abs/2111.06377> "Masked Autoencoders Are Scalable Vision Learners; CVPR").
+- **Self-supervised representations** - See [Feature Extraction](https://mlpapers.org/feature-extraction/#learned-representations) for contrastive learning, BYOL, DINO and masked autoencoders, with their direct analyses and follow-ups.
 - **Vision-language models** - CLIP supports language-defined recognition; Flamingo and LLaVA generate text from visual context. See [Multi-View Learning](https://mlpapers.org/multiview-learning/) for alignment and generation methods.
 
 ## Object detection
